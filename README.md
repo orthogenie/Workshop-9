@@ -9,7 +9,7 @@
 In this workshop you will be constructing the beginnings of a simple game called _Cube Invaders_.
 In particular, you will practice using the component based architecture offered by Unity, and learn
 how it can be used to put together interactive applications rapidly. The game will be rendered 
-in a 3D environment, but will be played in the x-z plane (e.g., it's a "2.5D" game). 
+in a 3D environment, but will be played in the x-z plane (in other words, it's a "2.5D" game). 
 Therefore, unless stated otherwise, game objects will be assumed to have a y-position of 0.
 
 <p align="center">
@@ -73,7 +73,7 @@ The method should instantiate a swarm of enemies in a "grid" formation.
 Make use of the already given serialized fields to determine the number of rows and columns 
 the grid of enemies comprises of, as well as the spacing between enemy cube instances.
 You will need to use the 
-[`Instantiate`](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html) method 
+[`Instantiate()`](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html) method 
 to create actual instances of the given prefab reference. Ensure the serialized field in
 the editor is correctly assigned the enemy prefab you created, currently stored in the game assets. A 
 drag and drop will do the trick, as usual.
@@ -81,9 +81,9 @@ drag and drop will do the trick, as usual.
 It's a good idea to make the enemies children of the swarm 
 manager game object in the object hierarchy. This way, transforming the swarm object will transform 
 all the enemies together, without the need for maintaining an explicit list
-of enemy instances. You may use the [`transform.SetParent`](https://docs.unity3d.com/ScriptReference/Transform.SetParent.html)
-method to do this, or it's also possible to do it using one of the
-[`Instantiate`](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html) method overloads.
+of enemy instances. You may use the [`transform.SetParent()`](https://docs.unity3d.com/ScriptReference/Transform.SetParent.html)
+method to do this, or it's also possible to do it by using one of the
+[`Instantiate()`](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html) method overloads.
 
 #### 5. Animate the swarm, classic space-invaders style
 
