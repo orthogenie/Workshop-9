@@ -28,10 +28,6 @@ method applies a translation accordingly. At this point it might help to re-fami
 Unity [`Input`](https://docs.unity3d.com/ScriptReference/Input.html) class, as well as the 
 [`Transform`](https://docs.unity3d.com/ScriptReference/Transform.html) component API.
 
-<p align="center">
-  <img src="Gifs/Q1.gif">
-</p>
-
 #### 2. Create an enemy
 
 Create a cube game object to serve as an enemy. Also create a red material asset, like the
